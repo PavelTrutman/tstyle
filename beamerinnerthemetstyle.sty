@@ -1,0 +1,51 @@
+\mode<presentation>
+
+\setbeamertemplate{background}{
+	%\begin{tikzpicture}
+	%\useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+	%\fill[color=brown] (0,2) rectangle (\the\paperwidth,\the\paperheight);
+	%\fill[color=orange] (0,0) rectangle(2.95,1.9);
+	%\fill[color=blue!50!cyan!80] (3.05,0) rectangle(\the\paperwidth,1.9);
+	%\ifnum\thepage>1\relax%
+	 %\fill[white,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
+	 %\fi
+	%\end{tikzpicture}
+}
+
+% Title page
+\defbeamertemplate*{title page}{texsx}[1][]
+{
+    % title
+    \begin{beamercolorbox}[sep=0.5cm,center]{title}
+      \usebeamerfont{title}\inserttitle\par
+      \usebeamerfont{subtitle}\insertsubtitle\par
+    \end{beamercolorbox}
+
+    % author
+    \vskip0.75cm
+    \begin{beamercolorbox}[center]{author}
+      \usebeamerfont{author}\insertauthor\par
+    \end{beamercolorbox}
+
+     % date
+    \vskip0.2cm
+    \begin{beamercolorbox}[center]{date}
+      \usebeamerfont{date}\insertdate
+    \end{beamercolorbox}
+
+    % logo
+    \vskip0.75cm%
+    \begin{beamercolorbox}[center]{white}
+      \includegraphics[height=1.5cm]{tstyle/images/ctu_inverse}
+    \end{beamercolorbox}
+
+    % institute
+    \vskip0.2cm
+    \begin{beamercolorbox}[center]{institute}
+      \usebeamerfont{institute}\insertinstitute
+    \end{beamercolorbox}
+}
+
+% Items
+%\setbeamertemplate{items}[square]
+%\setbeamertemplate{sections/subsections in toc}[square]
