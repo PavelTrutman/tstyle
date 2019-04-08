@@ -1,0 +1,43 @@
+\documentclass[mathserif,aspectratio=169]{beamer}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\title{There Is No Largest Prime Number}
+\subtitle{The Famous Proof}
+\date[CVPR 2018]{27th International Symposium of Prime Numbers}
+\date[CVPR 2018]{\today}
+\author[Pavel Trutman]{Pavel Trutman \\\texttt{pavel.trutman@cvut.cz}}
+\institute[CIIRC, CTU]{Czech Institute of Informatics, Robotics, and Cybernetics\\ Czech Technical University in Prague}
+
+\usepackage{tstyle/beamerthemetstyle}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\section{Intoduction}
+\subsection{Sub introduction}
+\begin{frame} 
+  \frametitle{There Is No Largest Prime Number} 
+  \framesubtitle{The proof uses \textit{reductio ad absurdum}.} 
+  \begin{theorem}
+  There is no largest prime number. \end{theorem} 
+  \begin{enumerate} 
+  \item<1-| alert@1> Suppose $p$ were the largest prime number. 
+  \item<2-> Let $q$ be the product of the first $p$ numbers. 
+  \item<3-> Then $q+1$ is not divisible by any of them. 
+  \item<1-> But $q + 1$ is greater than $1$, thus divisible by some prime
+  number not in the first $p$ numbers.
+  \end{enumerate}
+\end{frame}
+
+\section{Conclusions}
+\begin{frame}{A longer title}
+\begin{itemize}
+\item one
+\item two
+\end{itemize}
+\end{frame}
+
+\end{document}
